@@ -171,7 +171,7 @@ You can also checkout the Chainstack Developer Portal: [BASE tooling](https://do
 
 #### 4. Ollama setup
 
-[Downnload & install Ollama](https://ollama.com/download) for local model inference.
+[Download and install Ollama](https://ollama.com/download) for local model inference.
 
 Check Ollama help:
 
