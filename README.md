@@ -167,7 +167,7 @@ Foundry installation includes:
 - **forge** — smart contract compilation and testing
 - **cast** — command-line tool for blockchain interaction
 
-You can also checkout the Chainstack Developer Portal: [BASE tooling](https://docs.chainstack.com/docs/base-tooling#foundry) for an entry on Foundry with Chainstack nodes.
+You can also check out the Chainstack Developer Portal: [BASE tooling](https://docs.chainstack.com/docs/base-tooling#foundry) for an entry on Foundry with Chainstack nodes.
 
 #### 4. Ollama setup
 
