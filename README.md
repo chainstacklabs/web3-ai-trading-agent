@@ -2,9 +2,9 @@
 
 The chapters in this README follow the YouTube video walkthrough: [Build an Autonomous Web3 AI Trading Agent](https://youtu.be/2wQn_nvAQp8).
 
-See also [Chainstack Developer Portal](https://docs.chainstack.com/docs/mastering-web3-llms-and-ai-use).
+See also [Chainstack Developer Portal](https://docs.chainstack.com/docs/mastering-web3-llms-and-ai-use?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent).
 
-And [sign up with Chainstack](http://console.chainstack.com/) for the best Web3 infrastructure & RPC nodes.
+And [sign up with Chainstack](https://console.chainstack.com/sign-up?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent) for the best Web3 infrastructure & RPC nodes.
 
 ⚠️ NOT FOR PRODUCTION: This code is for learning purposes only. We assume no responsibility for the code or its usage. Modify for your needs and learn from it—examples, issues, and PRs all contain valuable insights.
 
@@ -79,7 +79,7 @@ If you are a Web3 user or developer and familiar with V3, the singleton design m
 - Debug transactions with detailed tracing if necessary
 
 **Chainstack nodes**  
-[Chainstack](https://chainstack.com/) delivers enterprise-grade [BASE RPC endpoints](https://chainstack.com/build-better-with-base/):
+[Chainstack](https://chainstack.com/?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent) delivers enterprise-grade [BASE RPC endpoints](https://chainstack.com/build-better-with-base/?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent):
 
 - Sub-second response times for real-time trading
 - 99.99% uptime for critical operations
@@ -167,7 +167,7 @@ Foundry installation includes:
 - **forge** — smart contract compilation and testing
 - **cast** — command-line tool for blockchain interaction
 
-You can also checkout the Chainstack Developer Portal: [BASE tooling](https://docs.chainstack.com/docs/base-tooling#foundry) for an entry on Foundry with Chainstack nodes.
+You can also checkout the Chainstack Developer Portal: [BASE tooling](https://docs.chainstack.com/docs/base-tooling?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent#foundry) for an entry on Foundry with Chainstack nodes.
 
 #### 4. Ollama setup
 
@@ -310,7 +310,7 @@ The foundation of Web3 trading begins with manual transactions. Users connect th
 To do a manual ETH-USDC swap on the exact Uniswap V4 pool that we use in a bot script and in the trading agent later in the tutorial, do the following:
 
 1. Install [MetaMask](https://metamask.io/).
-2. Connect to the BASE mainnet. See [Chainstack tooling](https://docs.chainstack.com/docs/base-tooling#metamask) or use [Chainlist](https://chainlist.org/).
+2. Connect to the BASE mainnet. See [Chainstack tooling](https://docs.chainstack.com/docs/base-tooling?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent#metamask) or use [Chainlist](https://chainlist.org/).
 3. Get some ETH on your BASE account.
 4. Do the [ETH-USDC pool](https://app.uniswap.org/explore/pools/base/0x96d4b53a38337a5733179751781178a2613306063c511b78cd02684739288c0a) swap.
 
@@ -483,7 +483,7 @@ BASE node endpoints:
 BASE_RPC_URLS = "YOUR_CHAINSTACK_NODE_ENDPOINT"
 ```
 
-There are two endpoints that you can provide there (or more)—this is only if you want to run the Uniswap V4 swaps data collection in a multi-threaded way as fast as posssible using the `collect_raw_data.py` script. In that case, I suggest putting there one [Global Node endpoint](https://docs.chainstack.com/docs/global-elastic-node) and one [Trader Node endpoint](https://docs.chainstack.com/docs/trader-node) for redundancy.
+There are two endpoints that you can provide there (or more)—this is only if you want to run the Uniswap V4 swaps data collection in a multi-threaded way as fast as posssible using the `collect_raw_data.py` script. In that case, I suggest putting there one [Global Node endpoint](https://docs.chainstack.com/docs/global-elastic-node?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent) and one [Trader Node endpoint](https://docs.chainstack.com/docs/trader-node?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent) for redundancy.
 Otherwise, if you are not going to do any heavy data collection, you should be 100% fine with just one node endpoint of any type.
 
 Your trading account private key:
@@ -504,7 +504,7 @@ USE_MLX_MODEL = False  # Start with Ollama
 Your Chainstack BASE node provides the blockchain connectivity for all operations:
 
 **Obtaining your endpoint**  
-1. Log into your [Chainstack account](https://console.chainstack.com/)
+1. Log into your [Chainstack account](https://console.chainstack.com/?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent)
 2. Navigate to your BASE network node
 3. Copy the HTTPS endpoint URL
 4. Replace `YOUR_CHAINSTACK_NODE_ENDPOINT` with your actual endpoint
@@ -584,7 +584,7 @@ Here are the instructions again.
 To do a manual ETH-USDC swap on the exact Uniswap V4 pool that we use in a bot script and in the trading agent later in the tutorial, do the following:
 
 1. Install [MetaMask](https://metamask.io/).
-2. Connect to the BASE mainnet. See [Chainstack tooling](https://docs.chainstack.com/docs/base-tooling#metamask) or use [Chainlist](https://chainlist.org/).
+2. Connect to the BASE mainnet. See [Chainstack tooling](https://docs.chainstack.com/docs/base-tooling?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent#metamask) or use [Chainlist](https://chainlist.org/).
 3. Get some ETH on your BASE account.
 4. Do the [ETH-USDC pool](https://app.uniswap.org/explore/pools/base/0x96d4b53a38337a5733179751781178a2613306063c511b78cd02684739288c0a) swap.
 
@@ -1257,11 +1257,11 @@ This is the real data we can collect and that our non-fine-tuned model acts on; 
 
 Make sure you have the following set up in `config.py`:
 
-- **Chainstack RPC node URLs** — [Get these at Chainstack](https://console.chainstack.com/)
+- **Chainstack RPC node URLs** — [Get these at Chainstack](https://console.chainstack.com/sign-up?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent)
 - **START_BLOCK** — begins collection from Uniswap V4 Universal Router deployment
 - **BATCH_SIZE** — processes 200 blocks per request for efficient data retrieval
 - **Pool targeting** — specifically monitors the ETH-USDC pool ID
-- **Rate limiting** — to respect your [Chainstack plan RPS limits](https://chainstack.com/pricing/)
+- **Rate limiting** — to respect your [Chainstack plan RPS limits](https://chainstack.com/pricing/?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent)
 
 Collect the trading data from BASE mainnet:
 
@@ -2061,15 +2061,15 @@ ai_trading_agent_publish_repo/
 ## Resources
 
 ### Documentation
-- [Chainstack Dev Portal](https://docs.chainstack.com/docs/mastering-web3-llms-and-ai-use)
-- [Chainstack MCP servers](https://docs.chainstack.com/docs/mcp-servers-introduction)
+- [Chainstack Dev Portal](https://docs.chainstack.com/docs/mastering-web3-llms-and-ai-use?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent)
+- [Chainstack MCP servers](https://docs.chainstack.com/docs/chainstack-mcp-server?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent)
 - [Uniswap V4 Docs](https://docs.uniswap.org/contracts/v4/)
 - [BASE Documentation](https://docs.base.org/)
 - [Foundry Book](https://book.getfoundry.sh/)
 - [MLX Documentation](https://ml-explore.github.io/mlx/build/html/index.html)
 
 ### APIs and services
-- [Chainstack](https://chainstack.com/) - RPC nodes
+- [Chainstack](https://chainstack.com/?utm_source=github&utm_medium=referral&utm_campaign=web3-ai-trading-agent) - RPC nodes
 - [OpenRouter](https://openrouter.ai/) - LLM API access
 - [Ollama](https://ollama.ai/) - Local LLM serving
 
